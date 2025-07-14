@@ -1,6 +1,6 @@
 import pandas as pd
 
-# ノードファイルとブランチファイルのパスを指定（あなたのファイルの場所に置き換えてください）
+# ノードファイルとブランチファイルのパスを指定
 node_file = 'nodes.csv'  # ノードファイルのパス
 branch_file = 'sewer_diameters_with_distances.csv'  # ブランチファイルのパス
 
