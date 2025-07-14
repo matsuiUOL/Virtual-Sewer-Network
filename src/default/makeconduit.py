@@ -39,15 +39,15 @@ with open(branch_file, mode='r') as branch_csv, open(output_file, mode='w') as o
     # ヘッダー行をスキップ
     next(reader)
     ## 追記 ##
-    # ヘッダーを除いた行数をカウントします
+    # ヘッダーを除いた行数をカウント
     iswr = sum(1 for _ in reader)
     
-    # ファイルポインタをリセットして再度読み込みます
+    # ファイルポインタをリセットして再度読み込む
     branch_csv.seek(0)
     reader = csv.reader(branch_csv)
     next(reader)  # ヘッダーを再度スキップ
     
-    # imhの値を出力ファイルに書き込みます
+    # imhの値を出力ファイルに書き込み
     output_dat.write(f"{iswr}\n")
 
     ## 追記終わり ##
